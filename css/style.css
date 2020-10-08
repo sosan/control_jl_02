@@ -4,14 +4,23 @@
 
 /* Tipografía */
 @font-face {
-    font-family: "";
-    src: url("") format("woff2"),
-         url("") format("woff");
+    font-family: "orion";
+    src: url("../font/orion.woff2") format("woff2"),
+         url("../font/orion.woff") format("woff");
+}
+
+@font-face {
+    font-family: "ascript";
+    src: url("../font/ascriptt.woff2") format("woff2"),
+         url("../font/ascriptt.woff") format("woff");
 }
 
 /* ******************************** */
-
 /* Colores */
-
 /* ******************************** */
 
+body
+{
+    font-family: orion, sans-serif;
+
+}
