@@ -79,6 +79,9 @@
 .texto-uber
 {
     font-weight: bold;
+    font-family: "ascript";
+    font-size: xx-large;
+
 }
 
 .navegacion-li
@@ -114,7 +117,12 @@
 
     color: var(--texto-color-azul);
     font-weight: bold;
+    
+    border-bottom: 2px solid var(--texto-color-azul);
+    line-height: 25px;    
 }
+
+
 
 .unselected
 {
