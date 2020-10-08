@@ -1,4 +1,269 @@
+:root
+{
+    --texto-color-azul: #3661EE;
+    --texto-color-gris: #8C8C8C;
+    --background-color-boton-join: #F3F6FF;
+    --background-color-borde: #383945;
+    
+    --background-color-fondo-container: #f3f3f3;
+    
+    /* TAMAÑOS */
+    --border-radius-borde-gris: 5px;
+    --border-radius: 10px;
+
+    --border-radius-boton-join-now: 6px;
+
+
+}
+
+
+
 /* *********************************** */
 /* *** Estilos SOLO para index.html *** */
 /* *********************************** */
 
+.container
+{
+    border: var(--border-radius-borde-gris) solid var(--background-color-borde);
+    border-radius: 20px;
+    
+    background-color: white;
+    z-index: 0;
+
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.3fr;
+    grid-template-rows: 15px auto auto;
+    grid-template-areas:
+    ". . ."
+    "h h ."
+    "m m .";
+
+    /* justify-content: center; */
+
+}
+
+
+.header
+{
+    grid-area: h;
+
+    align-items: center;
+
+}
+
+.ul-header
+{
+    
+    display: grid;
+    grid-template-columns: 30% auto 20%;
+    grid-template-areas: "uber nav boton";
+    width: 100%;
+    align-items: center;
+
+}
+
+
+
+
+
+.logo-li {
+    
+    grid-area: uber; 
+    text-align: center;
+
+    
+
+}
+
+.texto-uber
+{
+    font-weight: bold;
+}
+
+.navegacion-li
+{
+    grid-area: nav;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+
+.navegacion
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 70%;
+
+}
+
+
+.boton-li
+{
+    grid-area: boton;
+    justify-self: flex-end;
+
+}
+.selected
+{
+
+    color: var(--texto-color-azul);
+    font-weight: bold;
+}
+
+.unselected
+{
+    color: var(--texto-color-gris);
+    font-weight: normal;
+
+}
+
+
+
+.boton
+{
+    color: var(--texto-color-azul);
+    padding: 12px 24px;
+    font-weight: bold;
+    background-color: #e5edff;
+    border-radius: var(--border-radius-boton-join-now);
+    box-shadow: 0 0 0 0 rgba(230,237,255,.7);
+
+    
+}
+
+
+
+
+
+.texto_logo
+{
+    font-family: ascript;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+
+.main
+{
+    grid-area: m;
+
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr;
+    grid-template-areas: 
+    ". . . . "
+    "i i t t"
+    "i i t t";
+}
+
+.imagencelda
+{
+    grid-area: i;
+}
+
+.imagen
+{
+    max-width: 76%;
+
+}
+
+
+.textos {
+    
+    grid-area: t;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+    
+
+
+
+}
+
+.textoconjunto
+{
+    line-height: 20px;
+}
+
+.texto-h1
+{
+    font-family: "orion";
+    font-weight: bolder;
+    text-align: right;
+    color: var(--texto-color-azul);
+    font-size: 13ch;
+
+}
+
+.texto-h2
+{
+    font-weight: bolder;
+    text-align: right;
+
+   
+    
+}
+
+.texto-h3
+{
+    font-weight: lighter;
+    text-align: right;
+}
+
+
+
+.boton2
+{
+    color: white;
+    padding: 12px 24px;
+    font-weight: bold;
+    background-color:var(--texto-color-azul);
+    border-radius: var(--border-radius-boton-join-now);
+    box-shadow: 0 0 0 0 rgba(230,237,255,.7);
+
+    
+}
+
+
+
+.caja
+{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+
+}
+
+
+.email
+{
+    background-color: #e5edff;
+    color: var(--texto-color-gris);
+    font-weight: bolder;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.caja2
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    line-height: 20px;
+}
+
+.textomini
+{
+    font-size: 12px;
+    font-weight: light;
+}
